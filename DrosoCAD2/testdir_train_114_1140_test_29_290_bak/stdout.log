@@ -1,0 +1,12 @@
+/root/rsat/perl-scripts/convert-matrix -i /tmp/tmp.Fp3j1Hjh1p/insect_570.tf -from transfac -to transfac -split -o /tmp/tmp.Fp3j1Hjh1p/splitted_matrices/m
+../feature_list.txt
+toolRunner.sh ngs.IntervalStats -l ${tempdir}/positive_negative.bed -s mean ${wigArray[$i]} -o ${tempdir}/out_${filename}.tab
+DEBUG - Using statistic: mean
+DEBUG - Initializing input Wig file(s)
+ INFO - Autodetected Wiggle file type: /bio/rsat/public_html/tmp/ledpred_rsat_900a4a/K4me1_E_F_6_8h_H3_subtracted.wig
+DEBUG - Initializing output file
+DEBUG - Iterating over all intervals and computing mean
+ INFO - 319 intervals processed
+ INFO - 0 interval skipped
+/root/rsat/R-scripts/ledpred_rsat/map_features_to_crms.sh --positive_bed /bio/rsat/public_html/tmp/ledpred_rsat_900a4a/29_290CAD.bed --genome dm3 --negative_bed /bio/rsat/public_html/tmp/ledpred_rsat_900a4a/fileddf27e47b36 --feature_rank /bio/rsat/public_html/tmp/ledpred_rsat_900a4a/fileddf1ac2e239 --feature_nb 190 -m /bio/rsat/public_html/tmp/ledpred_rsat_900a4a/insect_570.tf --background_freqs /bio/rsat/public_html/tmp/ledpred_rsat_900a4a/2nt_intergenic_Drosophila_melanogaster.freq --ngs /bio/rsat/public_html/tmp/ledpred_rsat_900a4a/docBoundCRM.bed /bio/rsat/public_html/tmp/ledpred_rsat_900a4a/dtcfBoundCRM.bed /bio/rsat/public_html/tmp/ledpred_rsat_900a4a/K4me1_E_F_6_8h_H3_subtracted.wig /bio/rsat/public_html/tmp/ledpred_rsat_900a4a/pmadBoundCRM.bed /bio/rsat/public_html/tmp/ledpred_rsat_900a4a/pnrBoundCRM.bed /bio/rsat/public_html/tmp/ledpred_rsat_900a4a/tinBoundCRM.bed --outdir /bio/rsat/public_html/tmp/ledpred_rsat_900a4a
+Finished: Sun Apr 10 17:41:13 CEST 2016
