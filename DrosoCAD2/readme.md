@@ -1,9 +1,16 @@
 # CAD2 enhancer analysis
 
 Training: 114 positive + 1140 negative
+
 Test: 29 positive + 290 negative
 
-Run the R commands in this script __script_train_267_1360_test_67_340.R__
+First install the right LedPred version with this command
+
+~~~
+devtools::install_github('aitgon/LedPred', ref="9180ad69d3ecb2a0ce3619b457280d8873a60eb1")
+~~~
+
+Run the R commands in this script __script_onecommand.R__
 
 ## Reference
 
