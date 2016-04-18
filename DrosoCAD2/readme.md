@@ -7,10 +7,10 @@ Test: 29 positive + 290 negative
 First install the right LedPred version with this command
 
 ~~~
-devtools::install_github('aitgon/LedPred', ref="9180ad69d3ecb2a0ce3619b457280d8873a60eb1")
+devtools::install_github('aitgon/LedPred', ref="fca159a783fb8b04bda9fd7e556f19edd5dccb7f")
 ~~~
 
-Run the R commands in this script __script_onecommand.R__
+Run the R commands in this script __script.R__
 
 ## Reference
 

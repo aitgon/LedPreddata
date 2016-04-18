@@ -1,0 +1,48 @@
+; oligo-analysis  -v 1 -2str -i /bio/rsa-tools//data/genomes/Mus_musculus_EnsEMBL/genome/Mus_musculus_EnsEMBL_upstream.fasta -format fasta -2str -seqtype dna -noov -l 2 -type dna -return freq,occ -o /bio/rsa-tools//data/genomes/Mus_musculus_EnsEMBL/oligo-frequencies/2nt_upstream_Mus_musculus_EnsEMBL-noov-2str.freq
+; Citation: van Helden et al. (1998). J Mol Biol 281(5), 827-42. 
+; Program version              	1.134
+; Oligomer length              	2
+; Input file                   	/bio/rsa-tools//data/genomes/Mus_musculus_EnsEMBL/genome/Mus_musculus_EnsEMBL_upstream.fasta
+; Input format                 	fasta
+; Output file                  	/bio/rsa-tools//data/genomes/Mus_musculus_EnsEMBL/oligo-frequencies/2nt_upstream_Mus_musculus_EnsEMBL-noov-2str.freq
+; Discard overlapping matches
+; Counted on both strands
+; 	grouped by pairs of reverse complements
+; Background model             	bernoulli
+; Method                       	
+; Sequence type                	DNA
+; Nb of sequences              	39560
+; Sum of sequence lengths      	79120000
+; discarded residues           	10451	 (other letters than ACGT)
+; discarded occurrences        	10459	 (contain discarded residues)
+; nb possible positions        	79069981
+; total oligo occurrences      	79069981
+; total overlapping occurrences	5631450
+; total non overlapping occ    	73438531
+; alphabet size                	4
+; nb possible oligomers        	10
+; oligomers tested for significance	0
+; Threshold values
+;	Parameter      	Lower	Upper
+;	occ_P          	none	1
+;
+; column headers
+;	1	seq            	oligomer sequence
+;	2	id             	oligomer identifier
+;	3	observed_freq  	observed relative frequency
+;	4	occ            	observed occurrences
+;	5	ovl_occ        	number of overlapping occurrences (discarded from the count)
+;	6	forbocc        	forbidden positions (to avoid self-overlap)
+#seq	id	observed_freq	occ	ovl_occ	forbocc
+aa	aa|tt	0.1155872669300	9139483	3283781	9135779
+ac	ac|gt	0.1059235868540	8375376	0	8371761
+ag	ag|ct	0.1517908041485	12002096	0	11995416
+at	at|at	0.0573920967554	4537992	0	9074396
+ca	ca|tg	0.1448184868035	11450795	0	11447399
+cc	cc|gg	0.1025710882617	8110294	2347669	8098693
+cg	cg|cg	0.0207218590327	1638477	0	3273674
+ga	ga|tc	0.1238830195242	9795428	0	9790618
+gc	gc|gc	0.0541647910602	4282809	0	8560580
+ta	ta|ta	0.0519259135777	4105781	0	8209962
+; Job started 2008_05_06.162137
+; Job done    2008_05_06.165327
