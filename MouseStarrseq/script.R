@@ -31,7 +31,7 @@ dir.create(file.prefix.test, showWarnings=FALSE)
 crm.feature.file = file.path(file.prefix.test, 'crm_features_noscale.tab')
 stderr.log.file = file.path(file.prefix.test, 'stderr.log')
 stdout.log.file = file.path(file.prefix.test, 'stdout.log')
-feature_matrix=LedPred::mapFeaturesToCRMs(URL='http://ifbprod.aitorgonzalezlab.org/map_features_to_crms.php', positive.bed='67_340.bed', genome='mm9', pssm='../data/drosoVertebrateJaspar_flyFactor_hPDI.tf', background.freqs='2nt_upstream_Mus_musculus_EnsEMBL-noov-2str.freq', genome='mm9', my.values=list.files('peaks', full.names=TRUE), feature.ranking = read.table(file.path(file.prefix.train, '_feature_ranking.txt'), header=T), feature.nb = read.table(file.path(file.prefix.train, '_best.feature.nb.txt'))[1,1], crm.feature.file=crm.feature.file, stdout.log.file = stdout.log.file, stderr.log.file = stderr.log.file)
+feature_matrix=LedPred::mapFeaturesToCRMs(URL='http://ifbprod.aitorgonzalezlab.org/map_features_to_crms.php', positive.bed='67_340.bed', genome='mm9', pssm='../data/drosoVertebrateJaspar_flyFactor_hPDI.tf', background.freqs='2nt_upstream_Mus_musculus_EnsEMBL-noov-2str.freq', my.values=list.files('peaks', full.names=TRUE), feature.ranking = read.table(file.path(file.prefix.train, '_feature_ranking.txt'), header=T), feature.nb = read.table(file.path(file.prefix.train, '_best.feature.nb.txt'))[1,1], crm.feature.file=crm.feature.file, stdout.log.file = stdout.log.file, stderr.log.file = stderr.log.file)
 
 crms_test=read.table(crm.feature.file)
 #x=crms_test[,-1]
